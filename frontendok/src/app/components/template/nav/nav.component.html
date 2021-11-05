@@ -4,17 +4,20 @@
     mode="side"
     opened
     fixedInViewport="true"
-    fixedTopGop="64"
+    fixedTopGap="64"
   >
     <mat-nav-list class="nav-list">
-      <a mot-list-item>
+      <a mot-list-item routerLink="/">
         <i class="material-icons"> home </i>
         Home
       </a>
-      <a mot-list-item>
+      <a mot-list-item routerLink="/payments">
         <i class="material-icons">favorite</i>
         Pagamento
       </a>
     </mat-nav-list>
   </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>

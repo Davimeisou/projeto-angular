@@ -18,10 +18,14 @@ import {MatListModule} from "@angular/material/list";
 import { HomeComponent } from './views/home/home.component';
 import {MatCardModule} from "@angular/material/card";
 import { PaymentComponent } from './views/payment/payment.component';
+import { PaymentCreateComponent } from './components/payment/payment-create/payment-create.component';
+import {MatButtonModule} from "@angular/material/button";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, PaymentComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,MatToolbarModule,MatSidenavModule,MatListModule,MatCardModule],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, PaymentComponent, PaymentCreateComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,MatToolbarModule,MatSidenavModule,MatListModule,MatCardModule,MatButtonModule,MatSnackBarModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

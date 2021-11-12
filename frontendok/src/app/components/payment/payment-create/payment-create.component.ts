@@ -10,15 +10,14 @@ import { Payment } from "../payment.model";
 })
 export class PaymentCreateComponent implements OnInit {
     payment: Payment = {
-      nome: "Mariaaaa",
-      numero: 97024022010101001,
-      validade: "11/11" ,
-      codigo: 322,
+      nome: "",
+      numero: 0,
+      validade: "" ,
+      codigo: 0,
     };
   constructor(private paymentService: PaymentService, private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   createPayment(): void {
     this.paymentService.create(this.payment).subscribe(() => {
